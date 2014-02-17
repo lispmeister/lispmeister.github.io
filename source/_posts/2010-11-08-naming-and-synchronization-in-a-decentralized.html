@@ -1,0 +1,25 @@
+---
+layout: post
+title: ! '"Naming and Synchronization in a Decentralized Computer System" by David
+  P. Reed'
+date: 2010-11-08 15:27:00.000000000 +04:00
+comments: true
+categories: []
+published: true
+---
+<div style="color: #000000; font-family: Lucida Grande, Verdana, Arial, Helvetica, sans-serif; font-size: 13px; margin-top: 8px; margin-right: 12px; margin-bottom: 8px; margin-left: 12px; background-image: ; background-color: #ffffff; line-height: 1.4; font-weight: normal; background-position: 50% 0%; padding: 0px;">
+<p>The <a href="http://en.wikipedia.org/wiki/Croquet_Project" title="Croquet Project" target="_blank" style="color: #007bff;">Croquet Project</a> is a novel approach on how to do distributed programming and the first implementation of David P. Reed's thesis<a href="http://publications.csail.mit.edu/lcs/specpub.php?id=773" title=" NAMING AND SYNCHRONIZATION IN A DECENTRALIZED COMPUTER SYSTEM" target="_blank" style="color: #007bff;"> NAMING AND SYNCHRONIZATION IN A DECENTRALIZED COMPUTER SYSTEM</a> from 1978. Object state is versioned and you always reference a named version of an object. A named version of an object is immutable. Lots of good stuff in the original thesis.</p>
+<blockquote style="border-left-style: solid; border-left-width: 4px; border-left-color: #e4e4e4; margin-left: 30px; padding-left: 15px;">
+<p>Croquet's time-based synchronization capabilities enable real-time, identical interactions between groups of users while dramatically reducing the need for server infrastructures to support virtual world deployment. Croquet's architecture makes it easy to develop deeply collaborative applications without having to spend a lot of effort and expertise in understanding how replicated applications work.</p>
+<p>TeaTime is a scalable real-time multi-user architecture that is the basis for Croquet's object-object communication and synchronization. It is designed to support multi-user applications that can be scaled to massive numbers of concurrently interacting users in a shared virtual space. The most directly visible part of this architecture is the TObject class which is used to define and construct subclassed Tea objects. All of the interesting objects inside of Croquet are constructed from subclasses of TObject.</p>
+<p>A Tea object acts with the property that messages sent to it are redirected to replicated copies of itself on other users' participating machines in a peer-to-peer network. This messaging protocol supports a coordinated distributed two-phase commit that is used to control the progression of computations at participating user sites. In this way messages may be dynamically redirected to large numbers of users while maintaining the appropriate deadline-based scheduling. Thus, TeaTime is designed to allow for a great deal of adaptability and resilience and works on a heterogeneous set of resources. It is a framework of abstraction that works over a range of implementations and that can be evolved and tuned over time, both within an application and across applications.</p>
+</blockquote>
+<div class="p_embed p_file_embed">
+<a href="/file/2010/11/4348853-MIT-LCS-TR-205.pdf"><div class="p_icon"></div>
+<div class="p_text">MIT-LCS-TR-205.pdf</div>
+</a>
+</div>
+
+<p>Croquet was succeeded by <a href="http://www.opencobalt.org/" title="Open Cobalt">Open Cobalt</a> which was used to create the conferencing platform <a href="http://www.teleplace.com" title="Teleplace">Teleplace</a>. By now Teleplace is probably one of the largest Smalltalk installations ever.</p>
+</div>
+<p> </p>
