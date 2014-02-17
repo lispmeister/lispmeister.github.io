@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: capabilities | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/capabilities/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-17T20:15:45+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Robust Composition: Towards a Unified Approach to Access Control and Concurrency Control by Mark S. Miller]]></title>
+    <link href="http://lispmeister.github.io/blog/2011/10/21/robust-composition-towards-a-unified-approach-56704/"/>
+    <updated>2011-10-21T14:47:00+04:00</updated>
+    <id>http://lispmeister.github.io/blog/2011/10/21/robust-composition-towards-a-unified-approach-56704</id>
+    <content type="html"><![CDATA[<p></p>
+
+
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/10/7617236-robust-composition-mark.s.miller-thesis-current.pdf"><div class="p_icon"></div>
+<div class="p_text">robust-composition-mark.s.miller-thesis-current.pdf</div>
+</a>
+</div>
+
+
+<p><a href="http://en.wikipedia.org/wiki/Mark_S._Miller" title="Wikipedia Mark S. Miller">Mark S. Miller</a> did some deep thinking about security and the web. Back in the Xanadu days he worked together with <a href="http://en.wikipedia.org/wiki/Marc_Stiegler" title="Wikipedia Mark Stiegler">Mark Stiegler</a>. Stiegler later developed CapDes wrote the novel Earthweb about idea futures and reputation systems.</p>
+]]></content>
+  </entry>
+  
+</feed>

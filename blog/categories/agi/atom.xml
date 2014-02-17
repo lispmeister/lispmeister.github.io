@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: agi | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/agi/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-17T20:15:45+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Speculations Concerning The First Ultraintelligent Machine by Irving John Good]]></title>
+    <link href="http://lispmeister.github.io/blog/2012/05/26/speculations-concerning-the-first-ultraintell/"/>
+    <updated>2012-05-26T21:17:39+04:00</updated>
+    <id>http://lispmeister.github.io/blog/2012/05/26/speculations-concerning-the-first-ultraintell</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/05/9292221-Good65ultraintelligent.pdf"><div class="p_icon"></div>
+<div class="p_text">Good65ultraintelligent.pdf</div>
+</a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: network | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/network/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-17T20:15:45+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Underwater Laser sensor network: A New Approach for Broadband Communication in the Underwater]]></title>
+    <link href="http://lispmeister.github.io/blog/2012/12/09/underwater-laser-sensor-network-a-new-approac/"/>
+    <updated>2012-12-09T10:23:09+04:00</updated>
+    <id>http://lispmeister.github.io/blog/2012/12/09/underwater-laser-sensor-network-a-new-approac</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/12/10220739-10.1.1.148.9269.pdf"><div class="p_icon"></div>
+<div class="p_text">10.1.1.148.9269.pdf</div>
+</a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
