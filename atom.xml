@@ -4,7 +4,7 @@
   <title><![CDATA[deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-18T13:05:31+04:00</updated>
+  <updated>2014-02-18T17:24:11+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fresh New Look]]></title>
+    <link href="http://lispmeister.github.io/posts/2014/02/fresh-new-look/"/>
+    <updated>2014-02-18T16:26:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2014/02/fresh-new-look</id>
+    <content type="html"><![CDATA[<p><a class="fancybox" rel="group" href="http://lispmeister.github.io/images/2014/02/big_fresh-crabs_.jpg"><img src="http://lispmeister.github.io/images/2014/02/small_fresh-crabs_.jpg" alt="Fresh Crabs in Seattle" /></a></p>
+
+<p>I migrated the blog content from a static S3 bucket to
+<a href="http://octopress.org/">Octopress</a> hosted on Github pages.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Data centers are microkernels done accidentally: lessons for building a million-core distributed OS]]></title>
@@ -300,23 +312,6 @@ Unfortunately they don&#8217;t cite him in their paper, but the chaotic attracto
 </a>
 </div>
 <p>I recently rediscovered Leo Brodie&#8217;s book &#8220;Thinking Forth - A Language <br>and Philosophy of Solving Problems&#8221;. It has been reissued under a <br>creative commons license. It&#8217;s still a joy to read and I highly <br>recommend it.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Robust Composition: Towards a Unified Approach to Access Control and Concurrency Control]]></title>
-    <link href="http://lispmeister.github.io/posts/2011/06/robust-composition-towards-a-unified-approach/"/>
-    <updated>2011-06-06T10:51:03+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2011/06/robust-composition-towards-a-unified-approach</id>
-    <content type="html"><![CDATA[<p></p>
-<div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2011/06/6365052-robust-composition-mark.s.miller-thesis.pdf"><div class="p_icon"></div>
-<div class="p_text">robust-composition-mark.s.miller-thesis.pdf</div>
-</a>
-</div>
-
-<p>Capabilities might be one of the keys to solve the <a href="http://www.skyhunter.com/marcs/finalexam.html" title="Final Exam">Final Exam</a> questions posed by Marc Stiegler. Mark S. Miller worked together with Marc Stiegler on the <a href="http://en.wikipedia.org/wiki/Xanadu_Project" title="Xanadu project">Xanadu project</a> in the days before the advent of the web.</p>
-<p>Most questions are still open today.</p>
 ]]></content>
   </entry>
   
