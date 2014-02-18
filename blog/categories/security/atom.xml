@@ -4,7 +4,7 @@
   <title><![CDATA[Category: security | deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-17T20:49:19+04:00</updated>
+  <updated>2014-02-18T11:39:04+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Chip and PIN is Broken]]></title>
-    <link href="http://lispmeister.github.io/blog/2010/12/26/chip-and-pin-is-broken/"/>
+    <link href="http://lispmeister.github.io/posts/2010/12/chip-and-pin-is-broken/"/>
     <updated>2010-12-26T17:24:00+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2010/12/26/chip-and-pin-is-broken</id>
+    <id>http://lispmeister.github.io/posts/2010/12/chip-and-pin-is-broken</id>
     <content type="html"><![CDATA[<p>If you pay with "Chip and PIN" in the UK you might be interested in the fact that Steven Murdoch <a href="http://www.cl.cam.ac.uk/~sjm217/papers/oakland10chipbroken.pdf" title="Chip and PIN is Broken">published</a> a successful <a href="http://www.cl.cam.ac.uk/research/security/banking/nopin/" title="no PIN">attack</a> that breaks the security scheme of "Chip and PIN".</p>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: databases | deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/blog/categories/databases/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-17T20:49:19+04:00</updated>
+  <updated>2014-02-18T11:39:04+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A Model for Compound Type Changes Encountered in Schema Evolution]]></title>
-    <link href="http://lispmeister.github.io/blog/2012/11/20/a-model-for-compound-type-changes-encountered/"/>
+    <link href="http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered/"/>
     <updated>2012-11-20T08:28:00+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2012/11/20/a-model-for-compound-type-changes-encountered</id>
+    <id>http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered</id>
     <content type="html"><![CDATA[<p></p>
 
 

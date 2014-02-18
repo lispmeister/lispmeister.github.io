@@ -4,7 +4,7 @@
   <title><![CDATA[Category: underwater | deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/blog/categories/underwater/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-17T20:49:19+04:00</updated>
+  <updated>2014-02-18T11:39:04+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Design and Benchmark Tests of a Multi-Channel Hydrophone Array System for Dolphin Echolocation Recordings]]></title>
-    <link href="http://lispmeister.github.io/blog/2012/12/11/design-and-benchmark-tests-of-a-multi-channel/"/>
+    <link href="http://lispmeister.github.io/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel/"/>
     <updated>2012-12-11T10:38:00+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2012/12/11/design-and-benchmark-tests-of-a-multi-channel</id>
+    <id>http://lispmeister.github.io/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel</id>
     <content type="html"><![CDATA[<p></p>
 
 
@@ -49,9 +49,9 @@
   
   <entry>
     <title type="html"><![CDATA[Underwater Laser sensor network: A New Approach for Broadband Communication in the Underwater]]></title>
-    <link href="http://lispmeister.github.io/blog/2012/12/09/underwater-laser-sensor-network-a-new-approac/"/>
+    <link href="http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac/"/>
     <updated>2012-12-09T10:23:09+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2012/12/09/underwater-laser-sensor-network-a-new-approac</id>
+    <id>http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
 <a href="http://lispmeister.github.io/file/2012/12/10220739-10.1.1.148.9269.pdf"><div class="p_icon"></div>
 <div class="p_text">10.1.1.148.9269.pdf</div>

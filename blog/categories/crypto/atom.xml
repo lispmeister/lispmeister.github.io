@@ -4,7 +4,7 @@
   <title><![CDATA[Category: crypto | deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/blog/categories/crypto/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-17T20:49:19+04:00</updated>
+  <updated>2014-02-18T11:39:04+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Breakthrough silicon scanning discovers backdoor in military chip]]></title>
-    <link href="http://lispmeister.github.io/blog/2012/05/28/breakthrough-silicon-scanning-discovers-backd/"/>
+    <link href="http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd/"/>
     <updated>2012-05-28T21:12:43+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2012/05/28/breakthrough-silicon-scanning-discovers-backd</id>
+    <id>http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
 <a href="http://lispmeister.github.io/file/2012/05/9303204-Silicon_scan_draft.pdf"><div class="p_icon"></div>
 <div class="p_text">Silicon_scan_draft.pdf</div>
@@ -29,9 +29,9 @@
   
   <entry>
     <title type="html"><![CDATA[In the blink of an eye: There goes your AES key]]></title>
-    <link href="http://lispmeister.github.io/blog/2012/05/28/in-the-blink-of-an-eye-there-goes-your-aes-ke/"/>
+    <link href="http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke/"/>
     <updated>2012-05-28T21:09:19+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2012/05/28/in-the-blink-of-an-eye-there-goes-your-aes-ke</id>
+    <id>http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
 <a href="http://lispmeister.github.io/file/2012/05/9303181-AES_in_the_blink_draft.pdf"><div class="p_icon"></div>
 <div class="p_text">AES_in_the_blink_draft.pdf</div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cloud | deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/blog/categories/cloud/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-17T20:49:19+04:00</updated>
+  <updated>2014-02-18T11:39:04+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Data centers are microkernels done accidentally: lessons for building a million-core distributed OS]]></title>
-    <link href="http://lispmeister.github.io/blog/2013/01/23/data-centers-are-microkernels-done-accidental/"/>
+    <link href="http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental/"/>
     <updated>2013-01-23T19:33:00+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2013/01/23/data-centers-are-microkernels-done-accidental</id>
+    <id>http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental</id>
     <content type="html"><![CDATA[<p></p>
 
 
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cloud Computing on the Metal]]></title>
-    <link href="http://lispmeister.github.io/blog/2010/10/16/cloud-computing-on-the-metal/"/>
+    <link href="http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal/"/>
     <updated>2010-10-16T22:40:00+04:00</updated>
-    <id>http://lispmeister.github.io/blog/2010/10/16/cloud-computing-on-the-metal</id>
+    <id>http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal</id>
     <content type="html"><![CDATA[<p></p>
 
 
