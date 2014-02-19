@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-19T16:14:33+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fresh New Look]]></title>
+    <link href="http://lispmeister.github.io/posts/2014/02/fresh-new-look/"/>
+    <updated>2014-02-18T16:26:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2014/02/fresh-new-look</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://lispmeister.github.io/images/2014/02/fresh_crabs.jpg" width="1024" height="356" title="Fresh Crabs in Seattle" alt="Fresh Crabs in Seattle"></p>
+
+<p>I migrated the blog content from a static S3 bucket to
+<a href="http://octopress.org/">Octopress</a> hosted on Github pages.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Data centers are microkernels done accidentally: lessons for building a million-core distributed OS]]></title>
+    <link href="http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental/"/>
+    <updated>2013-01-23T19:33:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2013/01/10374726-2013-hotos-draft.pdf"><div class="p_icon"></div>
+<div class="p_text">2013-hotos-draft.pdf</div>
+</a>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Design and Benchmark Tests of a Multi-Channel Hydrophone Array System for Dolphin Echolocation Recordings]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel/"/>
+    <updated>2012-12-11T10:38:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/12/10229419-OJA20120300001_79831606.pdf"><div class="p_icon"></div>
+<div class="p_text">OJA20120300001_79831606.pdf</div>
+</a>
+</div>
+
+<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/12/10229441-elvis.pdf"><div class="p_icon"></div>
+<div class="p_text">elvis.pdf</div>
+</a>
+</div>
+
+<p>We&#8217;ve been asked if we can build something similar to this hydrophone array system but with higher resolution. The system described uses 47 hydrophones for cross sectional recordings of echolocation beams. I&#8217;m thinking that a version that works outside the aquarium environment and can be used from a boat would be even more interesting.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Underwater Laser sensor network: A New Approach for Broadband Communication in the Underwater]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac/"/>
+    <updated>2012-12-09T10:23:09+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/12/10220739-10.1.1.148.9269.pdf"><div class="p_icon"></div>
+<div class="p_text">10.1.1.148.9269.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Self Reproducing Automata - John von Neumann]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/11/self-reproducing-automata-john-von-neuman/"/>
+    <updated>2012-11-23T23:57:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/11/self-reproducing-automata-john-von-neuman</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/11/10155495-Self-Reproducing-Automata-VonNeumann.pdf"><div class="p_icon"></div>
+<div class="p_text">Self-Reproducing-Automata-VonNeumann.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Model for Compound Type Changes Encountered in Schema Evolution]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered/"/>
+    <updated>2012-11-20T08:28:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/11/10138827-A-Model-for-Compound-Type-Changes-Encountered-in-Schema-Evolution-Barbara-Staudt.pdf"><div class="p_icon"></div>
+<div class="p_text">A-Model-for-Compound-Type-Changes-Encountered-in-Schema-Evolution-Barbara-Staudt.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Breakthrough silicon scanning discovers backdoor in military chip]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd/"/>
+    <updated>2012-05-28T21:12:43+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/05/9303204-Silicon_scan_draft.pdf"><div class="p_icon"></div>
+<div class="p_text">Silicon_scan_draft.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[In the blink of an eye: There goes your AES key]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke/"/>
+    <updated>2012-05-28T21:09:19+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/05/9303181-AES_in_the_blink_draft.pdf"><div class="p_icon"></div>
+<div class="p_text">AES_in_the_blink_draft.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Speculations Concerning The First Ultraintelligent Machine by Irving John Good]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/05/speculations-concerning-the-first-ultraintell/"/>
+    <updated>2012-05-26T21:17:39+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/05/speculations-concerning-the-first-ultraintell</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/05/9292221-Good65ultraintelligent.pdf"><div class="p_icon"></div>
+<div class="p_text">Good65ultraintelligent.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TCP/IP Illustrated Vol 1-3]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/02/tcpip-illustrated-vol-1-3/"/>
+    <updated>2012-02-04T10:26:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/02/tcpip-illustrated-vol-1-3</id>
+    <content type="html"><![CDATA[<p>We are currently building a very large Akka system. It will have a gazillion connections to various external systems, lots of queues and internal services. Time to browse through Stevens for some inspiration on protocol design.</p>
+<p></p>
+<div class="p_embed p_image_embed">
+<img alt="Photo" height="375" src="http://lispmeister.github.io/images/2012/02/04/tcpip-illustrated-vol-1-3/37515453-photo.JPG" width="500">
+</div>
+
+<p> </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Is it Still Possible to Extend TCP?]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/01/is-it-still-possible-to-extend-tcp/"/>
+    <updated>2012-01-17T22:55:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/01/is-it-still-possible-to-extend-tcp</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/01/8364407-is-it-still-possible-to-extend-tcp.pdf"><div class="p_icon"></div>
+<div class="p_text">is-it-still-possible-to-extend-tcp.pdf</div>
+</a>
+</div>
+<p>Via @msimoni</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Symbolics XL1200 Repairs]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/01/symbolics-xl1200-repairs/"/>
+    <updated>2012-01-03T09:47:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/01/symbolics-xl1200-repairs</id>
+    <content type="html"><![CDATA[<p>The console for my Symbolics XL1200 survived but beam adjustment is a bit off. The special cable connecting the console to the workstation got lost too. I asked David Schmidt for a replacement. Meanwhile I&#8217;ll tinker with the console using the field manual for the Symbolics 3600.</p>
+<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/01/8249962-Symbolics_3600_Series_Basic_Field_Maint_Jul86.pdf"><div class="p_icon"></div>
+<div class="p_text">Symbolics_3600_Series_Basic_Field_Maint_Jul86.pdf</div>
+</a>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Byzantine Generals Problem]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/11/the-byzantine-generals-problem/"/>
+    <updated>2011-11-24T20:22:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/11/the-byzantine-generals-problem</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/11/7950512-byzantine-generals-problem.pdf"><div class="p_icon"></div>
+<div class="p_text">byzantine-generals-problem.pdf</div>
+</a>
+</div>
+
+<p>I&#8217;m designing a new distributed system for a customer which unlike the legacy system will have to scale horizontally. And of course we run into a lot of classic design problems when building a distributed system. The Lamport, Shostak, Pease paper is a classic and worth reading again.</p>
+<p> </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamo: Amazon’s Highly Available Key-value Store]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/11/dynamo-amazons-highly-available-key-value-sto/"/>
+    <updated>2011-11-14T17:08:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/11/dynamo-amazons-highly-available-key-value-sto</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/11/7852122-Dynamo.pdf"><div class="p_icon"></div>
+<div class="p_text">Dynamo.pdf</div>
+</a>
+</div>
+
+<p>The Dynamo paper explains some of the concepts used in the Riak distributed KV store.</p>
+<p> </p>
+<p> </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Declarative Imperative: Experiences and Conjectures in Distributed Logic]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/11/the-declarative-imperative-experiences-and-co/"/>
+    <updated>2011-11-09T15:57:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/11/the-declarative-imperative-experiences-and-co</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/11/7802529-The-Declarative-Imparative-EECS-2010-90.pdf"><div class="p_icon"></div>
+<div class="p_text">The-Declarative-Imparative-EECS-2010-90.pdf</div>
+</a>
+</div>
+
+<p>Paper recommended by <a href="http://twitter.com/coda">Coda Hale</a> and <a href="http://twitter.com/rckenned">Ryan Kennedy</a> of <a href="https://www.yammer.com/">Yammer</a>.</p>
+<p>I can also recommend their <a href="http://basho.com/blog/technical/2011/03/28/Riak-and-Scala-at-Yammer/" title="Riak and Scala at Yammer">Riak and Scala at Yammer</a> presentation.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Robust Composition: Towards a Unified Approach to Access Control and Concurrency Control by Mark S. Miller]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/10/robust-composition-towards-a-unified-approach-56704/"/>
+    <updated>2011-10-21T14:47:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/10/robust-composition-towards-a-unified-approach-56704</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/10/7617236-robust-composition-mark.s.miller-thesis-current.pdf"><div class="p_icon"></div>
+<div class="p_text">robust-composition-mark.s.miller-thesis-current.pdf</div>
+</a>
+</div>
+<a href="http://en.wikipedia.org/wiki/Mark_S._Miller" title="Wikipedia Mark S. Miller">Mark S. Miller</a> did some deep thinking about security and the web. Back in the Xanadu days he worked together with <a href="http://en.wikipedia.org/wiki/Marc_Stiegler" title="Wikipedia Mark Stiegler">Mark Stiegler</a>. Stiegler later developed CapDes wrote the novel Earthweb about idea futures and reputation systems.
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Consistency Analysis in Bloom: a CALM and Collected Approach]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll/"/>
+    <updated>2011-10-14T09:03:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/10/7552941-cidr11-bloom.pdf"><div class="p_icon"></div>
+<div class="p_text">cidr11-bloom.pdf</div>
+</a>
+</div>
+Via <span style="color: #444444; font-family: Helvetica Neue, Arial, sans-serif; font-size: 14px; line-height: 16px;"><a href="http://twitter.com/#!/argv0" class="tweet-user-block-screen-name user-profile-link" title="Andy Gross" style="">@argv0</a> who recommended this paper to </span><span style=""><a href="http://twitter.com/#!/nathanmarz" class="  twitter-atreply pretty-link" rel="nofollow" style="color: #0084b4; text-decoration: none; padding: 0px; margin: 0px;">@<strong style="text-decoration: underline; padding: 0px; margin: 0px;">nathanmarz</strong></a> .</span>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Qubes OS - One Virtual Machine per App]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/09/qubes-os-one-virtual-machine-per-app/"/>
+    <updated>2011-09-13T18:35:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/09/qubes-os-one-virtual-machine-per-app</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/09/7254278-qubes-os-arch-spec-0.3.pdf"><div class="p_icon"></div>
+<div class="p_text">qubes-os-arch-spec-0.3.pdf</div>
+</a>
+</div>
+
+<p>Joanna Rutkowska made some progress with her <a href="http://qubes-os.org/Home.html" title="Qubes OS">Qubes OS</a>. She released the Beta 1 of Qubes in April.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A simple chaotic oscillator for the Rössler attractor]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/09/a-simple-chaotic-oscillator-for-the-rossler-a/"/>
+    <updated>2011-09-08T18:43:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/09/a-simple-chaotic-oscillator-for-the-rossler-a</id>
+    <content type="html"><![CDATA[<p></p>
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/09/7206132-A_simple_chaotic.pdf"><div class="p_icon"></div>
+<div class="p_text">A_simple_chaotic.pdf</div>
+</a>
+</div>
+Unfortunately they don&#8217;t cite him in their paper, but the chaotic attractor shown in the phase space plot was first <a href="http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor" title="Wikipedia entry for Roessler attractor">discovered</a> by Otto E. <span style="font-family: sans-serif; line-height: 20px;">Rössler. </span><span style="font-family: sans-serif; line-height: 20px;">There&#8217;s also a <a href="http://physics.mercer.edu/hpage/vilnius.html" title="Spice Modeling of the Vilnius Chaotic Oscillator">paper</a> about a Spice simulation of this circuit.</span>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Thinking Forth - A Language and Philosophy for Solving Problems]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for/"/>
+    <updated>2011-06-23T16:54:24+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/06/6529208-thinking-forth-color.pdf"><div class="p_icon"></div>
+<div class="p_text">thinking-forth-color.pdf</div>
+</a>
+</div>
+<p>I recently rediscovered Leo Brodie&#8217;s book &#8220;Thinking Forth - A Language <br>and Philosophy of Solving Problems&#8221;. It has been reissued under a <br>creative commons license. It&#8217;s still a joy to read and I highly <br>recommend it.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: philosophy | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/philosophy/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-19T16:14:33+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Thinking Forth - A Language and Philosophy for Solving Problems]]></title>
+    <link href="http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for/"/>
+    <updated>2011-06-23T16:54:24+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for</id>
+    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2011/06/6529208-thinking-forth-color.pdf"><div class="p_icon"></div>
+<div class="p_text">thinking-forth-color.pdf</div>
+</a>
+</div>
+
+
+<p>I recently rediscovered Leo Brodie's book "Thinking Forth - A Language <br>and Philosophy of Solving Problems". It has been reissued under a <br>creative commons license. It's still a joy to read and I highly <br>recommend it.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

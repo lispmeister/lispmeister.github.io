@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cloud | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/cloud/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-19T16:14:33+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Data centers are microkernels done accidentally: lessons for building a million-core distributed OS]]></title>
+    <link href="http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental/"/>
+    <updated>2013-01-23T19:33:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2013/01/data-centers-are-microkernels-done-accidental</id>
+    <content type="html"><![CDATA[<p></p>
+
+
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2013/01/10374726-2013-hotos-draft.pdf"><div class="p_icon"></div>
+<div class="p_text">2013-hotos-draft.pdf</div>
+</a>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cloud Computing on the Metal]]></title>
+    <link href="http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal/"/>
+    <updated>2010-10-16T22:40:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal</id>
+    <content type="html"><![CDATA[<p></p>
+
+
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2010/10/4152604-2010-hotcloud-lamp.pdf"><div class="p_icon"></div>
+<div class="p_text">2010-hotcloud-lamp.pdf</div>
+</a>
+</div>
+
+
+
+
+<p class="p1">Found an interesting paper about doing cloud computing without an OS in between the virtual machine and the app.</p>
+
+
+<blockquote>The wide availability of cloud computing offers an unprecedented opportunity to rethink how we construct applications. The cloud is currently mostly used to package up existing software stacks and operating systems (e.g. LAMP) for scaling out websites. We instead view the cloud as a stable hardware platform, and present a programming framework which permits applications to be constructed to run directly on top of it without intervening software layers. Our prototype (dubbed Mirage) is unashamedly academic; it extends the Objective Caml language with storage extensions and a custom run-time to emit binaries that execute as a guest operating system under Xen. Mirage applications exhibit significant performance speedups for I/O and memory handling versus the same code running under Linux/Xen. Our results can be generalised to offer insight into improving more commonly used languages such as PHP, Python and Ruby, and we discuss lessons learnt and future directions.</blockquote>
+
+
+<p>Portions of the code are <a href="https://github.com/avsm/mirage" title="mirage source">available</a> on github.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

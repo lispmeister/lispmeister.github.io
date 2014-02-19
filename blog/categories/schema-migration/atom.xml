@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: schema migration | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/schema-migration/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-19T16:14:33+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Model for Compound Type Changes Encountered in Schema Evolution]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered/"/>
+    <updated>2012-11-20T08:28:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/11/a-model-for-compound-type-changes-encountered</id>
+    <content type="html"><![CDATA[<p></p>
+
+
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/11/10138827-A-Model-for-Compound-Type-Changes-Encountered-in-Schema-Evolution-Barbara-Staudt.pdf"><div class="p_icon"></div>
+<div class="p_text">A-Model-for-Compound-Type-Changes-Encountered-in-Schema-Evolution-Barbara-Staudt.pdf</div>
+</a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tcp | deeprecursion.com]]></title>
+  <link href="http://lispmeister.github.io/blog/categories/tcp/atom.xml" rel="self"/>
+  <link href="http://lispmeister.github.io/"/>
+  <updated>2014-02-19T16:14:33+04:00</updated>
+  <id>http://lispmeister.github.io/</id>
+  <author>
+    <name><![CDATA[Markus Fix]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Is it Still Possible to Extend TCP?]]></title>
+    <link href="http://lispmeister.github.io/posts/2012/01/is-it-still-possible-to-extend-tcp/"/>
+    <updated>2012-01-17T22:55:00+04:00</updated>
+    <id>http://lispmeister.github.io/posts/2012/01/is-it-still-possible-to-extend-tcp</id>
+    <content type="html"><![CDATA[<p></p>
+
+
+<div class="p_embed p_file_embed">
+<a href="http://lispmeister.github.io/file/2012/01/8364407-is-it-still-possible-to-extend-tcp.pdf"><div class="p_icon"></div>
+<div class="p_text">is-it-still-possible-to-extend-tcp.pdf</div>
+</a>
+</div>
+
+
+<p>Via @msimoni</p>
+
+]]></content>
+  </entry>
+  
+</feed>
