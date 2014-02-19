@@ -4,7 +4,7 @@
   <title><![CDATA[deeprecursion.com]]></title>
   <link href="http://lispmeister.github.io/atom.xml" rel="self"/>
   <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-18T17:24:11+04:00</updated>
+  <updated>2014-02-19T15:16:18+04:00</updated>
   <id>http://lispmeister.github.io/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -18,7 +18,7 @@
     <link href="http://lispmeister.github.io/posts/2014/02/fresh-new-look/"/>
     <updated>2014-02-18T16:26:00+04:00</updated>
     <id>http://lispmeister.github.io/posts/2014/02/fresh-new-look</id>
-    <content type="html"><![CDATA[<p><a class="fancybox" rel="group" href="http://lispmeister.github.io/images/2014/02/big_fresh-crabs_.jpg"><img src="http://lispmeister.github.io/images/2014/02/small_fresh-crabs_.jpg" alt="Fresh Crabs in Seattle" /></a></p>
+    <content type="html"><![CDATA[<p><img class="right" src="http://lispmeister.github.io/images/2014/02/fresh_crabs.jpg" width="1024" height="356" title="Fresh Crabs in Seattle" alt="Fresh Crabs in Seattle"></p>
 
 <p>I migrated the blog content from a static S3 bucket to
 <a href="http://octopress.org/">Octopress</a> hosted on Github pages.</p>
