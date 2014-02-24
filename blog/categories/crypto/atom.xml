@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: crypto | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/crypto/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/crypto/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,11 +15,11 @@
   
   <entry>
     <title type="html"><![CDATA[Breakthrough silicon scanning discovers backdoor in military chip]]></title>
-    <link href="http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd/"/>
+    <link href="http://deeprecursion.com/posts/2012/05/breakthrough-silicon-scanning-discovers-backd/"/>
     <updated>2012-05-28T21:12:43+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2012/05/breakthrough-silicon-scanning-discovers-backd</id>
+    <id>http://deeprecursion.com/posts/2012/05/breakthrough-silicon-scanning-discovers-backd</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2012/05/9303204-Silicon_scan_draft.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2012/05/9303204-Silicon_scan_draft.pdf"><div class="p_icon"></div>
 <div class="p_text">Silicon_scan_draft.pdf</div>
 </a>
 </div>
@@ -29,11 +29,11 @@
   
   <entry>
     <title type="html"><![CDATA[In the blink of an eye: There goes your AES key]]></title>
-    <link href="http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke/"/>
+    <link href="http://deeprecursion.com/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke/"/>
     <updated>2012-05-28T21:09:19+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke</id>
+    <id>http://deeprecursion.com/posts/2012/05/in-the-blink-of-an-eye-there-goes-your-aes-ke</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2012/05/9303181-AES_in_the_blink_draft.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2012/05/9303181-AES_in_the_blink_draft.pdf"><div class="p_icon"></div>
 <div class="p_text">AES_in_the_blink_draft.pdf</div>
 </a>
 </div>

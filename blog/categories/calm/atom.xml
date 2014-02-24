@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: calm | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/calm/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/calm/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[Consistency Analysis in Bloom: a CALM and Collected Approach]]></title>
-    <link href="http://lispmeister.github.io/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll/"/>
+    <link href="http://deeprecursion.com/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll/"/>
     <updated>2011-10-14T09:03:00+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll</id>
+    <id>http://deeprecursion.com/posts/2011/10/consistency-analysis-in-bloom-a-calm-and-coll</id>
     <content type="html"><![CDATA[<p></p>
 
 
 <div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2011/10/7552941-cidr11-bloom.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2011/10/7552941-cidr11-bloom.pdf"><div class="p_icon"></div>
 <div class="p_text">cidr11-bloom.pdf</div>
 </a>
 </div>

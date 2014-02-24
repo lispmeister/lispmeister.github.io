@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://lispmeister.github.io/sitemap.xml 
+Sitemap: http://deeprecursion.com/sitemap.xml 

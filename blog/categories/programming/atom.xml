@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: programming | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/programming/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,11 +15,11 @@
   
   <entry>
     <title type="html"><![CDATA[Thinking Forth - A Language and Philosophy for Solving Problems]]></title>
-    <link href="http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for/"/>
+    <link href="http://deeprecursion.com/posts/2011/06/thinking-forth-a-language-and-philosophy-for/"/>
     <updated>2011-06-23T16:54:24+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2011/06/thinking-forth-a-language-and-philosophy-for</id>
+    <id>http://deeprecursion.com/posts/2011/06/thinking-forth-a-language-and-philosophy-for</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2011/06/6529208-thinking-forth-color.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2011/06/6529208-thinking-forth-color.pdf"><div class="p_icon"></div>
 <div class="p_text">thinking-forth-color.pdf</div>
 </a>
 </div>

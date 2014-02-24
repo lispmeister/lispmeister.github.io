@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: laser | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/laser/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/laser/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,11 +15,11 @@
   
   <entry>
     <title type="html"><![CDATA[Underwater Laser sensor network: A New Approach for Broadband Communication in the Underwater]]></title>
-    <link href="http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac/"/>
+    <link href="http://deeprecursion.com/posts/2012/12/underwater-laser-sensor-network-a-new-approac/"/>
     <updated>2012-12-09T10:23:09+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2012/12/underwater-laser-sensor-network-a-new-approac</id>
+    <id>http://deeprecursion.com/posts/2012/12/underwater-laser-sensor-network-a-new-approac</id>
     <content type="html"><![CDATA[<div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2012/12/10220739-10.1.1.148.9269.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2012/12/10220739-10.1.1.148.9269.pdf"><div class="p_icon"></div>
 <div class="p_text">10.1.1.148.9269.pdf</div>
 </a>
 </div>

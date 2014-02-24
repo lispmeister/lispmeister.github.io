@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: capabilities | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/capabilities/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/capabilities/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[Robust Composition: Towards a Unified Approach to Access Control and Concurrency Control by Mark S. Miller]]></title>
-    <link href="http://lispmeister.github.io/posts/2011/10/robust-composition-towards-a-unified-approach-56704/"/>
+    <link href="http://deeprecursion.com/posts/2011/10/robust-composition-towards-a-unified-approach-56704/"/>
     <updated>2011-10-21T14:47:00+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2011/10/robust-composition-towards-a-unified-approach-56704</id>
+    <id>http://deeprecursion.com/posts/2011/10/robust-composition-towards-a-unified-approach-56704</id>
     <content type="html"><![CDATA[<p></p>
 
 
 <div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2011/10/7617236-robust-composition-mark.s.miller-thesis-current.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2011/10/7617236-robust-composition-mark.s.miller-thesis-current.pdf"><div class="p_icon"></div>
 <div class="p_text">robust-composition-mark.s.miller-thesis-current.pdf</div>
 </a>
 </div>

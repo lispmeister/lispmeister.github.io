@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: research | deeprecursion.com]]></title>
-  <link href="http://lispmeister.github.io/blog/categories/research/atom.xml" rel="self"/>
-  <link href="http://lispmeister.github.io/"/>
-  <updated>2014-02-19T16:14:33+04:00</updated>
-  <id>http://lispmeister.github.io/</id>
+  <link href="http://deeprecursion.com/blog/categories/research/atom.xml" rel="self"/>
+  <link href="http://deeprecursion.com/"/>
+  <updated>2014-02-24T12:59:45+04:00</updated>
+  <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
     
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[Cloud Computing on the Metal]]></title>
-    <link href="http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal/"/>
+    <link href="http://deeprecursion.com/posts/2010/10/cloud-computing-on-the-metal/"/>
     <updated>2010-10-16T22:40:00+04:00</updated>
-    <id>http://lispmeister.github.io/posts/2010/10/cloud-computing-on-the-metal</id>
+    <id>http://deeprecursion.com/posts/2010/10/cloud-computing-on-the-metal</id>
     <content type="html"><![CDATA[<p></p>
 
 
 <div class="p_embed p_file_embed">
-<a href="http://lispmeister.github.io/file/2010/10/4152604-2010-hotcloud-lamp.pdf"><div class="p_icon"></div>
+<a href="http://deeprecursion.com/file/2010/10/4152604-2010-hotcloud-lamp.pdf"><div class="p_icon"></div>
 <div class="p_text">2010-hotcloud-lamp.pdf</div>
 </a>
 </div>
