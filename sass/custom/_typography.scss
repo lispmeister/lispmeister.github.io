@@ -2,7 +2,7 @@ h1, h2, h3 {
     margin-top: 32px;
     margin-bottom: 12px;
 }
-h1, h2, h3, {
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
@@ -26,3 +26,28 @@ q {
 // Here you can easily change font faces which are used in your site.
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works. your sites's.
 // If you love to use Web Fonts, you also need to add some lines to source/_includes/custom/head.html
+
+h1,
+.h1 {
+  font-size: 24px;
+}
+h2,
+.h2 {
+  font-size: 18px;
+}
+h3,
+.h3 {
+  font-size: 14px;
+}
+h4,
+.h4 {
+  font-size: 12px;
+}
+h5,
+.h5 {
+  font-size: 12px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
