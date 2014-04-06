@@ -28,3 +28,9 @@ functionality was integrated into SCStu- dio as a new feature for
 importing PCAP files. This paper describes the developing process and
 behaviour of implemented functionality.
 {% endblockquote %}
+
+Of course there is also [TraceUML](http://trace2uml.tigris.org/) to
+generate sequence diagrams from log statements. Alas, I really want
+something that generates [Mscgen](http://www.mcternan.me.uk/mscgen/)
+source.
+
