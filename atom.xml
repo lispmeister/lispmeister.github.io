@@ -4,7 +4,7 @@
   <title><![CDATA[deeprecursion.com]]></title>
   <link href="http://deeprecursion.com/atom.xml" rel="self"/>
   <link href="http://deeprecursion.com/"/>
-  <updated>2014-02-26T12:44:09+04:00</updated>
+  <updated>2014-04-06T19:07:11+04:00</updated>
   <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Generation of MSC Diagrams form Network Traffic]]></title>
+    <link href="http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-form-network-traffic/"/>
+    <updated>2014-04-06T17:14:00+04:00</updated>
+    <id>http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-form-network-traffic</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://deeprecursion.com/images/2014/04/generation-of-MSC-diagrams-from-network-traffic.png" width="250" height="250" title="Generation of MSC Diagrams from Network Traffic" alt="Generation of MSC Diagrams from Network Traffic"></p>
+
+<p>I&rsquo;m trying to work out a way to auto-generate message flow diagrams
+from method calls or traces in log files. Here I found a paper that
+shows how to do that for TCP/IP network traffic logs.</p>
+
+<blockquote><p>Message Sequence Chart (MSC) diagrams were designed for modeling of<br/>message-based communication between entities in the network. They are<br/>used primarily by developing of a new network protocol as a<br/>description of design requirements. However, MSC can be as well used<br/>for visualization of real traffic captured from a network. One of the<br/>applications aimed at work with MSC formalism is Sequence Chart Studio<br/>(SCStudio), which is being developed in research centre Institute for<br/>Theoretical Computer Science at FI MUNI.</p><p>The thesis is focused on the problem of generating Message Sequence<br/>Chart (MSC) diagrams from PCAP (packet capture) file format. This<br/>functionality was integrated into SCStu- dio as a new feature for<br/>importing PCAP files. This paper describes the developing process and<br/>behaviour of implemented functionality.</p><footer><strong>Viktor Borza |</strong> <cite><a href='http://deeprecursion.com/files/2014/04/06/Generation-of-MSC-Diagrams-from-Network-Traffic.pdf'>Generation of MSC Diagrams From Network Traffic</a></cite></footer></blockquote>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fresh New Look]]></title>
@@ -298,20 +314,6 @@ Via <span style="color: #444444; font-family: Helvetica Neue, Arial, sans-serif
 </a>
 </div>
 Unfortunately they don&#8217;t cite him in their paper, but the chaotic attractor shown in the phase space plot was first <a href="http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor" title="Wikipedia entry for Roessler attractor">discovered</a> by Otto E. <span style="font-family: sans-serif; line-height: 20px;">Rössler. </span><span style="font-family: sans-serif; line-height: 20px;">There&#8217;s also a <a href="http://physics.mercer.edu/hpage/vilnius.html" title="Spice Modeling of the Vilnius Chaotic Oscillator">paper</a> about a Spice simulation of this circuit.</span>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Thinking Forth - A Language and Philosophy for Solving Problems]]></title>
-    <link href="http://deeprecursion.com/posts/2011/06/thinking-forth-a-language-and-philosophy-for/"/>
-    <updated>2011-06-23T16:54:24+04:00</updated>
-    <id>http://deeprecursion.com/posts/2011/06/thinking-forth-a-language-and-philosophy-for</id>
-    <content type="html"><![CDATA[<div class="p_embed p_file_embed">
-<a href="http://deeprecursion.com/file/2011/06/6529208-thinking-forth-color.pdf"><div class="p_icon"></div>
-<div class="p_text">thinking-forth-color.pdf</div>
-</a>
-</div>
-<p>I recently rediscovered Leo Brodie&#8217;s book &#8220;Thinking Forth - A Language <br>and Philosophy of Solving Problems&#8221;. It has been reissued under a <br>creative commons license. It&#8217;s still a joy to read and I highly <br>recommend it.</p>
 ]]></content>
   </entry>
   
