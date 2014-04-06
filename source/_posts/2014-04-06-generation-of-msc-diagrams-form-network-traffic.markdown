@@ -29,8 +29,12 @@ importing PCAP files. This paper describes the developing process and
 behaviour of implemented functionality.
 {% endblockquote %}
 
-Of course there is also [TraceUML](http://trace2uml.tigris.org/) to
-generate sequence diagrams from log statements. Alas, I really want
-something that generates [Mscgen](http://www.mcternan.me.uk/mscgen/)
+Other sequence diagram generators:
+
+- [TraceUML](http://trace2uml.tigris.org/) to generate sequence diagrams from log statements.
+- [seqdiag](http://blockdiag.com/en/seqdiag/) is a Python tool.
+
+Alas, I really want something that generates [Mscgen](http://www.mcternan.me.uk/mscgen/)
 source.
+
 
