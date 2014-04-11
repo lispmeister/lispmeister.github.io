@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tcp | deeprecursion.com]]></title>
   <link href="http://deeprecursion.com/blog/categories/tcp/atom.xml" rel="self"/>
   <link href="http://deeprecursion.com/"/>
-  <updated>2014-04-06T20:35:50+04:00</updated>
+  <updated>2014-04-11T09:09:59+04:00</updated>
   <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -31,6 +31,8 @@ shows how to do that for TCP/IP network traffic logs.</p>
 <ul>
 <li><a href="http://trace2uml.tigris.org/">TraceUML</a> to generate sequence diagrams from log statements.</li>
 <li><a href="http://blockdiag.com/en/seqdiag/">seqdiag</a> is a Python tool.</li>
+<li><a href="http://satoss.uni.lu/software/mscpackage/">mscpackage</a> is a LaTeX package for drawing message sequence
+diagrams that supports the full MSC2000 language.</li>
 </ul>
 
 
