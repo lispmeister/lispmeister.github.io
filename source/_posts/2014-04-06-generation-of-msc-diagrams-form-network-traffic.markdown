@@ -33,8 +33,18 @@ Other sequence diagram generators:
 
 - [TraceUML](http://trace2uml.tigris.org/) to generate sequence diagrams from log statements.
 - [seqdiag](http://blockdiag.com/en/seqdiag/) is a Python tool.
+- [mscpackage](http://satoss.uni.lu/software/mscpackage/) is a LaTeX package for drawing message sequence
+diagrams that supports the full MSC2000 language.
+- [Quick Sequence Diagram Editor](http://sdedit.sourceforge.net/) is a
+  tool for creating UML sequence diagrams from textual descriptions of
+  objects and messages.
+- [JS Sequence Diagrams](http://bramp.github.io/js-sequence-diagrams/)
+  is a simple javascript library to turn text into vector UML sequence diagrams. 
+- [Jumly](http://jumly.tmtk.net/) is a JavaScript library for UML
+  diagram rendering engine. It works completely on client side.
+  
+I'm currently using [Mscgen](http://www.mcternan.me.uk/mscgen/)
+because I can edit and render diagram source in Emacs with org-mode.
 
-Alas, I really want something that generates [Mscgen](http://www.mcternan.me.uk/mscgen/)
-source.
 
 
