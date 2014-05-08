@@ -102,12 +102,165 @@
 
 
 
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-08T18:35:00+04:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
+        
+      </p>
+    
+    
+      <h1 class="entry-title"><a href="/posts/2014/05/distributed-tracing-with-zipkin/">Distributed Tracing With Zipkin</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content clearfix"><p><img class="right" src="/images/2014/05/zipkin-docker-small.png" width="400" height="339" title="Distributed Tracing with Zipkin" alt="Distributed Tracing with Zipkin"></p>
+
+<p>Instead of parsing log file entries we now send tracing messages to a
+Zipkin collector. To make initial development easier we containerized
+a fully working Zipkin environment. All you need is <code>Virtualbox</code> and
+<code>boot2docker</code> to boot Zipkin and run the demo Scala code.</p>
+
+<p>All Docker images needed for Zipkin are registered as trusted builds
+with the Docker.io index. To give it a spin you can just checkou the
+Scala / Akka demo project and deploy the images. If you&rsquo;re curious the
+Docker project shows how to setup and link containers.</p>
+
+<p>Below you&rsquo;ll find instructions on how to test the Zipkin containers
+with a Scala / Akka project running locally on your OSX host.</p>
+
+<p>You first need to install VirtualBox.
+<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+
+<p>Information on running Docker on OSX can be found here:
+<a href="http://docs.docker.io/installation/mac/">http://docs.docker.io/installation/mac/</a></p>
+
+<p>You need to have the Homebrew package manager installed:
+<a href="http://brew.sh/">http://brew.sh/</a></p>
+
+<p>You need to install <code>boot2docker</code>:</p>
+
+<pre><code>brew update
+brew install boot2docker
+</code></pre>
+
+<p>Once boot2docker is installed boot the VM for the first time:</p>
+
+<pre><code>boot2docker start
+</code></pre>
+
+<p>When booting the images via boot2docker on OSX you will need to make
+sure the guest VM ports are forwarded. Here&rsquo;s an example that forwards
+the relevant ports for the Zipkin services:</p>
+
+<pre><code># vm must be powered off 
+boot2docker stop
+# collector
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9410,tcp,127.0.0.1,9410,,9410"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "udp-port9410,udp,127.0.0.1,9410,,9410"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9900,tcp,127.0.0.1,9900,,9900"
+# query
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9411,tcp,127.0.0.1,9411,,9411"
+# web
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port8080,tcp,127.0.0.1,8080,,8080"
+# cassandra
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port7000,tcp,127.0.0.1,7000,,7000"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port7001,tcp,127.0.0.1,7001,,7001"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9042,tcp,127.0.0.1,9042,,9042"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9160,tcp,127.0.0.1,9160,,9160"
+# start VM
+boot2docker start
+</code></pre>
+
+<h2>Install and Boot Zipkin</h2>
+
+<p>Clone the demo project:</p>
+
+<pre><code>git clone https://github.com/lispmeister/psychic-octo-bear.git zipkin-tracing-demo
+cd zipkin-tracing-demo
+</code></pre>
+
+<p>Now you&rsquo;re ready to deploy the Docker images for Zipkin.
+The images are all registered at
+<a href="https://index.docker.io/u/lispmeister/">https://index.docker.io/u/lispmeister/</a>
+and will be downloaded automatically.</p>
+
+<pre><code>bin/deploy-zipkin.sh
+</code></pre>
+
+<p>This will fetch the Docker images from the Docker.io index and start
+the containers. Downloading the Docker images will take a while. Be
+patient. Once the images are downloaded the deploy script will start
+the containers. Wait until the CPU load is below 40% again. Booting
+Cassandra in the container can take quite a while.</p>
+
+<p>If you want to trace code that runs on the host you will need to
+expose and forward the collector port as shown in deploy.sh.</p>
+
+<p>Once the containers are running you can connect to the collector on
+port 9410 via akka-tracing or other libraries that support Zipkin tracing.
+<a href="https://github.com/levkhomich/akka-tracing">https://github.com/levkhomich/akka-tracing</a></p>
+
+<h2>Install SBT</h2>
+
+<p>You need to have <code>sbt</code> installed.</p>
+
+<pre><code>brew install sbt
+</code></pre>
+
+<h2>Run the demo</h2>
+
+<p>The demo creates ten Put requests that flow through the Web,
+Service, S3 actors. The flows into and out of the actors are traced
+using the Akka Tracing library which implements a Scala interface for
+the Twitter Zipkin distributed tracing tool.</p>
+
+<pre><code>sbt run
+</code></pre>
+
+<h2>Inspect the Trace</h2>
+
+<p>Open a browser to the local Zipkin web instance at this address:</p>
+
+<p><a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></p>
+
+<h2>Links:</h2>
+
+<ul>
+<li><a href="https://github.com/lispmeister/psychic-octo-bear">Scala / Akka Demo Project</a></li>
+<li><a href="https://github.com/lispmeister/docker-zipkin">Docker container with Zipkin</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-04-06T17:14:00+04:00" pubdate data-updated="true">Apr 6<span>th</span>, 2014</time>
         
       </p>
     
     
-      <h1 class="entry-title"><a href="/posts/2014/04/generation-of-msc-diagrams-form-network-traffic/">Generation of MSC Diagrams Form Network Traffic</a></h1>
+      <h1 class="entry-title"><a href="/posts/2014/04/generation-of-msc-diagrams-from-network-traffic/">Generation of MSC Diagrams From Network Traffic</a></h1>
     
   </header>
 
@@ -488,47 +641,6 @@ because I can edit and render diagram source in Emacs with org-mode.</p>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2012-05-26T21:17:39+04:00" pubdate data-updated="true">May 26<span>th</span>, 2012</time>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/posts/2012/05/speculations-concerning-the-first-ultraintell/">Speculations Concerning the First Ultraintelligent Machine by Irving John Good</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><div class="p_embed p_file_embed">
-<a href="/file/2012/05/9292221-Good65ultraintelligent.pdf"><div class="p_icon"></div>
-<div class="p_text">Good65ultraintelligent.pdf</div>
-</a>
-</div>
-</div>
-  
-  
-
-
-        </article>
-      
     </div>
 
     <ul class="pager">
@@ -552,15 +664,15 @@ because I can edit and render diagram source in Emacs with org-mode.</p>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/posts/2014/04/generation-of-msc-diagrams-form-network-traffic/">Generation of MSC Diagrams Form Network Traffic</a>
+    <a class="list-group-item " href="/posts/2014/05/distributed-tracing-with-zipkin/">Distributed Tracing With Zipkin</a>
+    
+    <a class="list-group-item " href="/posts/2014/04/generation-of-msc-diagrams-from-network-traffic/">Generation of MSC Diagrams From Network Traffic</a>
     
     <a class="list-group-item " href="/posts/2014/02/fresh-new-look/">Fresh New Look</a>
     
     <a class="list-group-item " href="/posts/2013/01/data-centers-are-microkernels-done-accidental/">Data Centers Are Microkernels Done Accidentally: Lessons for Building a Million-core Distributed OS</a>
     
     <a class="list-group-item " href="/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel/">Design and Benchmark Tests of a Multi-Channel Hydrophone Array System for Dolphin Echolocation Recordings</a>
-    
-    <a class="list-group-item " href="/posts/2012/12/underwater-laser-sensor-network-a-new-approac/">Underwater Laser Sensor Network: A New Approach for Broadband Communication in the Underwater</a>
     
   </div>
 </section>
@@ -650,7 +762,7 @@ because I can edit and render diagram source in Emacs with org-mode.</p>
     
     
     <a class="list-group-item " href="/blog/categories/programming/index.html">
-        <span class="badge">2</span>
+        <span class="badge">3</span>
         programming
       </a>
     
@@ -668,7 +780,7 @@ because I can edit and render diagram source in Emacs with org-mode.</p>
     
     
     <a class="list-group-item " href="/blog/categories/distributed/index.html">
-        <span class="badge">1</span>
+        <span class="badge">2</span>
         distributed
       </a>
     
@@ -782,8 +894,32 @@ because I can edit and render diagram source in Emacs with org-mode.</p>
     
     
     <a class="list-group-item " href="/blog/categories/design/index.html">
-        <span class="badge">1</span>
+        <span class="badge">2</span>
         design
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/tracing/index.html">
+        <span class="badge">2</span>
+        tracing
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/cassandra/index.html">
+        <span class="badge">1</span>
+        Cassandra
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/docker/index.html">
+        <span class="badge">1</span>
+        Docker
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/zipkin/index.html">
+        <span class="badge">1</span>
+        Zipkin
       </a>
     
   </div>

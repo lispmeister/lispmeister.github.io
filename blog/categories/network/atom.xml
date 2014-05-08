@@ -4,7 +4,7 @@
   <title><![CDATA[Category: network | deeprecursion.com]]></title>
   <link href="http://deeprecursion.com/blog/categories/network/atom.xml" rel="self"/>
   <link href="http://deeprecursion.com/"/>
-  <updated>2014-04-11T10:14:42+04:00</updated>
+  <updated>2014-05-08T21:43:22+04:00</updated>
   <id>http://deeprecursion.com/</id>
   <author>
     <name><![CDATA[Markus Fix]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Generation of MSC Diagrams form Network Traffic]]></title>
-    <link href="http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-form-network-traffic/"/>
+    <title type="html"><![CDATA[Generation of MSC Diagrams from Network Traffic]]></title>
+    <link href="http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-from-network-traffic/"/>
     <updated>2014-04-06T17:14:00+04:00</updated>
-    <id>http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-form-network-traffic</id>
+    <id>http://deeprecursion.com/posts/2014/04/generation-of-msc-diagrams-from-network-traffic</id>
     <content type="html"><![CDATA[<p><img class="right" src="/images/2014/04/generation-of-MSC-diagrams-from-network-traffic.png" width="250" height="250" title="&lsquo;Generation of MSC Diagrams from Network Traffic&rsquo; &lsquo;Generation of MSC Diagrams from Network Traffic&rsquo;" ></p>
 
 <p>I&rsquo;m trying to work out a way to auto-generate message flow diagrams

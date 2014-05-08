@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Distributed Tracing with Zipkin - deeprecursion.com</title>
+  <meta name="author" content="Markus Fix">
+
+  
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://deeprecursion.com/posts/2014/05/distributed-tracing-with-zipkin">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="/atom.xml" rel="alternate" title="deeprecursion.com" type="application/atom+xml">
+
+  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  
+
+</head>
+
+  <body   >
+    <div id="wrap">
+      <header role="banner">
+        <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">deeprecursion.com</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Blog</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="/atom.xml" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+            </ul>
+            
+                <form class="search navbar-form navbar-right" action="http://google.com/search" method="GET">
+                    <input type="hidden" name="q" value="site:deeprecursion.com">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="q" placeholder="Search">
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div id="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content col-md-9">
+    <article class="hentry" role="article">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-08T18:35:00+04:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
+        
+      </p>
+    
+    
+    <h1 class="entry-title">
+        Distributed Tracing With Zipkin
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix"><p><img class="right" src="/images/2014/05/zipkin-docker-small.png" width="400" height="339" title="Distributed Tracing with Zipkin" alt="Distributed Tracing with Zipkin"></p>
+
+<p>Instead of parsing log file entries we now send tracing messages to a
+Zipkin collector. To make initial development easier we containerized
+a fully working Zipkin environment. All you need is <code>Virtualbox</code> and
+<code>boot2docker</code> to boot Zipkin and run the demo Scala code.</p>
+
+<p>All Docker images needed for Zipkin are registered as trusted builds
+with the Docker.io index. To give it a spin you can just checkou the
+Scala / Akka demo project and deploy the images. If you&rsquo;re curious the
+Docker project shows how to setup and link containers.</p>
+
+<p>Below you&rsquo;ll find instructions on how to test the Zipkin containers
+with a Scala / Akka project running locally on your OSX host.</p>
+
+<p>You first need to install VirtualBox.
+<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+
+<p>Information on running Docker on OSX can be found here:
+<a href="http://docs.docker.io/installation/mac/">http://docs.docker.io/installation/mac/</a></p>
+
+<p>You need to have the Homebrew package manager installed:
+<a href="http://brew.sh/">http://brew.sh/</a></p>
+
+<p>You need to install <code>boot2docker</code>:</p>
+
+<pre><code>brew update
+brew install boot2docker
+</code></pre>
+
+<p>Once boot2docker is installed boot the VM for the first time:</p>
+
+<pre><code>boot2docker start
+</code></pre>
+
+<p>When booting the images via boot2docker on OSX you will need to make
+sure the guest VM ports are forwarded. Here&rsquo;s an example that forwards
+the relevant ports for the Zipkin services:</p>
+
+<pre><code># vm must be powered off 
+boot2docker stop
+# collector
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9410,tcp,127.0.0.1,9410,,9410"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "udp-port9410,udp,127.0.0.1,9410,,9410"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9900,tcp,127.0.0.1,9900,,9900"
+# query
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9411,tcp,127.0.0.1,9411,,9411"
+# web
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port8080,tcp,127.0.0.1,8080,,8080"
+# cassandra
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port7000,tcp,127.0.0.1,7000,,7000"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port7001,tcp,127.0.0.1,7001,,7001"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9042,tcp,127.0.0.1,9042,,9042"
+VBoxManage modifyvm "boot2docker-vm" --natpf1 "tcp-port9160,tcp,127.0.0.1,9160,,9160"
+# start VM
+boot2docker start
+</code></pre>
+
+<h2>Install and Boot Zipkin</h2>
+
+<p>Clone the demo project:</p>
+
+<pre><code>git clone https://github.com/lispmeister/psychic-octo-bear.git zipkin-tracing-demo
+cd zipkin-tracing-demo
+</code></pre>
+
+<p>Now you&rsquo;re ready to deploy the Docker images for Zipkin.
+The images are all registered at
+<a href="https://index.docker.io/u/lispmeister/">https://index.docker.io/u/lispmeister/</a>
+and will be downloaded automatically.</p>
+
+<pre><code>bin/deploy-zipkin.sh
+</code></pre>
+
+<p>This will fetch the Docker images from the Docker.io index and start
+the containers. Downloading the Docker images will take a while. Be
+patient. Once the images are downloaded the deploy script will start
+the containers. Wait until the CPU load is below 40% again. Booting
+Cassandra in the container can take quite a while.</p>
+
+<p>If you want to trace code that runs on the host you will need to
+expose and forward the collector port as shown in deploy.sh.</p>
+
+<p>Once the containers are running you can connect to the collector on
+port 9410 via akka-tracing or other libraries that support Zipkin tracing.
+<a href="https://github.com/levkhomich/akka-tracing">https://github.com/levkhomich/akka-tracing</a></p>
+
+<h2>Install SBT</h2>
+
+<p>You need to have <code>sbt</code> installed.</p>
+
+<pre><code>brew install sbt
+</code></pre>
+
+<h2>Run the demo</h2>
+
+<p>The demo creates ten Put requests that flow through the Web,
+Service, S3 actors. The flows into and out of the actors are traced
+using the Akka Tracing library which implements a Scala interface for
+the Twitter Zipkin distributed tracing tool.</p>
+
+<pre><code>sbt run
+</code></pre>
+
+<h2>Inspect the Trace</h2>
+
+<p>Open a browser to the local Zipkin web instance at this address:</p>
+
+<p><a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></p>
+
+<h2>Links:</h2>
+
+<ul>
+<li><a href="https://github.com/lispmeister/psychic-octo-bear">Scala / Akka Demo Project</a></li>
+<li><a href="https://github.com/lispmeister/docker-zipkin">Docker container with Zipkin</a></li>
+</ul>
+
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard">Posted by <span class="fn">Markus Fix</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-08T18:35:00+04:00" pubdate data-updated="true">May 8<span>th</span>, 2014</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cassandra/'>Cassandra</a>, <a class='category' href='/blog/categories/docker/'>Docker</a>, <a class='category' href='/blog/categories/zipkin/'>Zipkin</a>, <a class='category' href='/blog/categories/design/'>design</a>, <a class='category' href='/blog/categories/distributed/'>distributed</a>, <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/tracing/'>tracing</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://deeprecursion.com/posts/2014/05/distributed-tracing-with-zipkin/" data-via="lispmeister" data-counturl="http://deeprecursion.com/posts/2014/05/distributed-tracing-with-zipkin/" >Tweet</a>
+  
+  
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/posts/2014/04/generation-of-msc-diagrams-from-network-traffic/" title="Previous Post: Generation of MSC Diagrams from Network Traffic">&laquo; Generation of MSC Diagrams from Network Traffic</a></li>
+            
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
+    
+  </div>
+
+  
+  <aside class="sidebar col-md-3">
+    
+      <section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item active" href="/posts/2014/05/distributed-tracing-with-zipkin/">Distributed Tracing With Zipkin</a>
+    
+    <a class="list-group-item " href="/posts/2014/04/generation-of-msc-diagrams-from-network-traffic/">Generation of MSC Diagrams From Network Traffic</a>
+    
+    <a class="list-group-item " href="/posts/2014/02/fresh-new-look/">Fresh New Look</a>
+    
+    <a class="list-group-item " href="/posts/2013/01/data-centers-are-microkernels-done-accidental/">Data Centers Are Microkernels Done Accidentally: Lessons for Building a Million-core Distributed OS</a>
+    
+    <a class="list-group-item " href="/posts/2012/12/design-and-benchmark-tests-of-a-multi-channel/">Design and Benchmark Tests of a Multi-Channel Hydrophone Array System for Dolphin Echolocation Recordings</a>
+    
+  </div>
+</section>
+
+<section>
+<a class="twitter-timeline" href="https://twitter.com/lispmeister" data-widget-id="436090333550493696">Tweets by @lispmeister</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ </section>
+
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Categories</h3>
+  </div>
+  <div class="list-group">
+    
+    
+    <a class="list-group-item " href="/blog/categories/cloud/index.html">
+        <span class="badge">2</span>
+        cloud
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/mirage/index.html">
+        <span class="badge">1</span>
+        mirage
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/ocaml/index.html">
+        <span class="badge">1</span>
+        ocaml
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/research/index.html">
+        <span class="badge">2</span>
+        research
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/xenlinux/index.html">
+        <span class="badge">1</span>
+        xenlinux
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/attack/index.html">
+        <span class="badge">1</span>
+        attack
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/chipandpin/index.html">
+        <span class="badge">1</span>
+        chipandpin
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/embedded/index.html">
+        <span class="badge">1</span>
+        embedded
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/paymentsystems/index.html">
+        <span class="badge">1</span>
+        paymentsystems
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/security/index.html">
+        <span class="badge">1</span>
+        security
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/forth/index.html">
+        <span class="badge">1</span>
+        forth
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/philosophy/index.html">
+        <span class="badge">1</span>
+        philosophy
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/programming/index.html">
+        <span class="badge">3</span>
+        programming
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/calm/index.html">
+        <span class="badge">1</span>
+        calm
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/disorderlyprogramming/index.html">
+        <span class="badge">1</span>
+        disorderlyprogramming
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/distributed/index.html">
+        <span class="badge">2</span>
+        distributed
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/dsl/index.html">
+        <span class="badge">1</span>
+        dsl
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/capabilities/index.html">
+        <span class="badge">1</span>
+        capabilities
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/tcp/index.html">
+        <span class="badge">2</span>
+        tcp
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/agi/index.html">
+        <span class="badge">1</span>
+        agi
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/ai/index.html">
+        <span class="badge">1</span>
+        ai
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/aes/index.html">
+        <span class="badge">1</span>
+        aes
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/crypto/index.html">
+        <span class="badge">2</span>
+        crypto
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/databases/index.html">
+        <span class="badge">1</span>
+        databases
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/schema-migration/index.html">
+        <span class="badge">1</span>
+        schema migration
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/nanotechnology/index.html">
+        <span class="badge">1</span>
+        nanotechnology
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/space-colonization/index.html">
+        <span class="badge">1</span>
+        space colonization
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/laser/index.html">
+        <span class="badge">1</span>
+        laser
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/network/index.html">
+        <span class="badge">2</span>
+        network
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/sensors/index.html">
+        <span class="badge">1</span>
+        sensors
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/underwater/index.html">
+        <span class="badge">2</span>
+        underwater
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/dolphins/index.html">
+        <span class="badge">1</span>
+        dolphins
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/hydrophone/index.html">
+        <span class="badge">1</span>
+        hydrophone
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/microkernels/index.html">
+        <span class="badge">1</span>
+        microkernels
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/design/index.html">
+        <span class="badge">2</span>
+        design
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/tracing/index.html">
+        <span class="badge">2</span>
+        tracing
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/cassandra/index.html">
+        <span class="badge">1</span>
+        Cassandra
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/docker/index.html">
+        <span class="badge">1</span>
+        Docker
+      </a>
+    
+    
+    <a class="list-group-item " href="/blog/categories/zipkin/index.html">
+        <span class="badge">1</span>
+        Zipkin
+      </a>
+    
+  </div>
+</section>
+<section class="panel panel-default clearfix">
+  <div class="panel-heading">
+      <h3 class="panel-title">GitHub Repos</h3>
+  </div>
+  <div class="list-group" id="gh_repos">
+    <p class="loading">Status updating...</p>
+  </div>
+  
+    <div class="gh-profile-link pull-right text-muted">
+      <a href="https://github.com/lispmeister">@lispmeister</a> on GitHub
+    </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'lispmeister',
+            count: 5,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+    
+  </aside>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits">
+  Copyright &copy; 2014 - Markus Fix<br>
+  <small>
+      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
+      <span class="credit">customized with <a href="https://github.com/kAworu/octostrap3">octostrap3</a></span>.
+  </small>
+</p>
+
+</div>
+</footer>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr-2.0.js"></script>
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'deeprecursioncom';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://deeprecursion.com/posts/2014/05/distributed-tracing-with-zipkin/';
+        var disqus_url = 'http://deeprecursion.com/posts/2014/05/distributed-tracing-with-zipkin/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  </body>
+</html>
