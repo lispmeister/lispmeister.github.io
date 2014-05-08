@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Generation of MSC Diagrams form Network Traffic"
+title: "Generation of MSC Diagrams from Network Traffic"
 date: 2014-04-06 17:14
 comments: true
-categories: [research, network, tcp, programming, design]
+categories: [research, network, tcp, programming, design, tracing]
 ---
 
 {% img right /images/2014/04/generation-of-MSC-diagrams-from-network-traffic.png 250 250 'Generation of MSC Diagrams from Network Traffic' 'Generation of MSC Diagrams from Network Traffic' %}
