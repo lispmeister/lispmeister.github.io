@@ -139,11 +139,14 @@ with a Scala / Akka project running locally on your OSX host.</p>
 
 <pre><code>brew update
 brew install boot2docker
+brew install docker
 </code></pre>
 
 <p>Once boot2docker is installed boot the VM for the first time:</p>
 
-<pre><code>boot2docker start
+<pre><code>export DOCKER_HOST=tcp://127.0.0.1:4243
+boot2docker init
+boot2docker start
 </code></pre>
 
 <p>When booting the images via boot2docker on OSX you will need to make
