@@ -33,9 +33,12 @@ You need to install `boot2docker`:
 
     brew update
     brew install boot2docker
+    brew install docker
     
 Once boot2docker is installed boot the VM for the first time:
 
+    export DOCKER_HOST=tcp://127.0.0.1:4243
+    boot2docker init
     boot2docker start
 
 When booting the images via boot2docker on OSX you will need to make
